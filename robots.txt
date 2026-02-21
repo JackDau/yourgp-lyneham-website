@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jackdau.github.io/yourgp-lyneham-website/sitemap.xml
