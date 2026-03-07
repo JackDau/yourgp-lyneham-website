@@ -3287,9 +3287,17 @@ footer {
 
 	.page-id-61 .content {
 
-		width: 240px;
+		width: 100%;
+		max-width: 100%;
+		box-sizing: border-box;
+		padding: 15px;
 
-		padding: 30px;
+	}
+
+	.page-id-61 .patient-firstrow {
+
+		width: 100%;
+		padding-right: 15px;
 
 	}
 
