@@ -1,3 +1,29 @@
 User-agent: *
 Allow: /
-Sitemap: https://jackdau.github.io/yourgp-lyneham-website/sitemap.xml
+Sitemap: https://www.yourgplyneham.com.au/sitemap.xml
+
+# AI and LLM crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# LLM context files
+# https://www.yourgplyneham.com.au/llms.txt
+# https://www.yourgplyneham.com.au/llms-full.txt
