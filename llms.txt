@@ -2,7 +2,7 @@
 
 > General practice in Lyneham, Canberra — Genuine Care, Clinical Excellence.
 
-YourGP@Lyneham is a 4-room general practice located in Lyneham, a suburb of Canberra in the Australian Capital Territory. It is the original YourGP location and part of the YourGP network of independent practices (Crace, Denman Prospect, and Lyneham). The practice offers comprehensive general practice services including skin cancer checks, minor procedures, chronic disease management, and preventive care. The practice is AGPAL accredited and is a teaching practice affiliated with the Australian National University.
+YourGP@Lyneham is a 4-room general practice located in Lyneham, a suburb of Canberra in the Australian Capital Territory. It is the original YourGP location and part of the YourGP network of independent practices (Crace, Denman Prospect, and Lyneham). The practice offers comprehensive general practice services including skin cancer checks, minor procedures, chronic disease management, and preventive care. The practice is AGPAL accredited and is a teaching practice affiliated with the Australian National University. YourGP is actively recruiting GPs, nurses, and admin team members across 3 clinics with 33 consulting rooms, serving 30,000+ patients per year.
 
 ## Key Information
 
@@ -18,7 +18,7 @@ YourGP@Lyneham is a 4-room general practice located in Lyneham, a suburb of Canb
 ## Services
 
 - Children's Health and Childhood Immunisations
-- Chronic Disease Management (diabetes, heart disease, asthma, COPD, mental health)
+- Chronic Disease Management (cardiovascular disease, type 2 diabetes, osteoarthritis, chronic kidney disease, autoimmune diseases)
 - Driver's Medicals
 - Men's Health
 - Mental Health (care plans, referrals to psychologists)
@@ -46,8 +46,8 @@ YourGP@Lyneham is a 4-room general practice located in Lyneham, a suburb of Canb
 - [Home](https://www.yourgplyneham.com.au/): Welcome, practice philosophy, opening hours, locations map
 - [Doctors](https://www.yourgplyneham.com.au/doctors/): GP profiles, qualifications, special interests, availability
 - [Services](https://www.yourgplyneham.com.au/services/): Full list of clinical services and allied health
-- [New Patient](https://www.yourgplyneham.com.au/patient/): New patient information, forms, after hours care
-- [FAQ](https://www.yourgplyneham.com.au/faq/): Billing, appointments, parking, results, privacy policy
-- [Contact](https://www.yourgplyneham.com.au/contact/): Contact form, feedback, directions
-- [Careers](https://www.yourgplyneham.com.au/careers/): Current job openings
-- [Privacy Policy](https://www.yourgplyneham.com.au/privacy-policy/): Full privacy policy
+- [New Patient](https://www.yourgplyneham.com.au/patient/): New patient information, fees, forms, after hours care
+- [FAQ](https://www.yourgplyneham.com.au/faq/): Billing, appointments, parking, results, accreditation, teaching practice
+- [Contact](https://www.yourgplyneham.com.au/contact/): Phone, fax, online contact form, prescription and referral requests, directions
+- [Careers](https://www.yourgplyneham.com.au/careers/): GP, nursing, and admin team recruitment
+- [Privacy Policy](https://www.yourgplyneham.com.au/privacy-policy/): Full privacy policy (reviewed February 2026)
