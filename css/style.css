@@ -1007,6 +1007,40 @@ a {
 
 
 
+		.page-id-21 .staff-member .top-content .card-status {
+
+			display: block;
+
+			padding: 0 2%;
+
+			margin-top: 0.3em;
+
+			font-size: 12px;
+
+			line-height: 1.3;
+
+		}
+
+		.page-id-21 .staff-member .top-content .card-status.status-welcome {
+
+			color: #80B7A2;
+
+		}
+
+		.page-id-21 .staff-member .top-content .card-status.status-limited {
+
+			color: #D9822F;
+
+		}
+
+		.page-id-21 .staff-member .top-content .card-status.status-not-accepting {
+
+			color: #888;
+
+		}
+
+
+
 .page-id-21 .sidebar {
 
 	margin-top: 50px;
