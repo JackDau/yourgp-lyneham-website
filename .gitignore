@@ -5,7 +5,3 @@ node_modules/
 .env
 raw/
 cleanup.mjs
-.claude/
-*-DESKTOP-*.html
-*-DESKTOP-*.txt
-*-DESKTOP-*.xml
