@@ -6,7 +6,7 @@ User-agent: *
 Content-Signal: search=yes,ai-input=yes,ai-train=no
 Allow: /
 
-Sitemap: https://www.yourgplyneham.com.au/sitemap.xml
+Sitemap: https://yourgplyneham.com.au/sitemap.xml
 
 # -----------------------------------------------------------------------
 # AI search & answer engines — ALLOWED
@@ -39,6 +39,6 @@ Disallow: /
 
 # -----------------------------------------------------------------------
 # LLM context files
-#   https://www.yourgplyneham.com.au/llms.txt
-#   https://www.yourgplyneham.com.au/llms-full.txt
+#   https://yourgplyneham.com.au/llms.txt
+#   https://yourgplyneham.com.au/llms-full.txt
 # -----------------------------------------------------------------------

@@ -126,7 +126,7 @@ Check-ups, pap smears, STI screens, breast check, contraceptive advice, implanon
 Payment is required at the time of your appointment. Standard consultation charges apply. Your insurer will reimburse you.
 
 ### After Hours
-After hours services are contained on the new patient page. See https://www.yourgplyneham.com.au/patient/ for details.
+After hours services are contained on the new patient page. See https://yourgplyneham.com.au/patient/ for details.
 
 ### Allied Health
 
@@ -380,4 +380,4 @@ You have the right to request access to, or correction of, your personal informa
 
 To lodge a privacy complaint, contact us at admin@ygp.au, by post to any YourGP location, or by phone on 02 6109 0000. We will investigate and respond within 30 days. If not satisfied, you may lodge a complaint with the Office of the Australian Information Commissioner (OAIC) on 1300 363 992 or at www.oaic.gov.au.
 
-The full privacy policy is available at https://www.yourgplyneham.com.au/privacy-policy/
+The full privacy policy is available at https://yourgplyneham.com.au/privacy-policy/
