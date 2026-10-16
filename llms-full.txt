@@ -22,7 +22,7 @@ Most importantly, your GP wishes to take the time to listen and explain. Your GP
 
 ### Opening Hours
 
-**Lyneham**: Monday to Thursday 8:00am–6:00pm, Friday 8:00am–12:00pm
+**Lyneham**: Monday to Thursday 8:00am–5:30pm, Friday 8:00am–12:00pm
 
 ### Locations
 
@@ -174,7 +174,7 @@ There is a cancellation list which you can place yourself on by booking online o
 
 ### After Hours
 
-Practice opening hours are 8am to 6pm Monday to Thursday, 8am to 12pm Friday. All our clinics are also open on Saturdays, with hours that vary depending on doctor availability. Please call or book online to confirm.
+Practice opening hours are 8am to 5:30pm Monday to Thursday, 8am to 12pm Friday. All our clinics are also open on Saturdays, with hours that vary depending on doctor availability. Please call or book online to confirm.
 
 For attention outside these hours please call CALMS on 1300 422 567. CALMS (Canberra Afterhours Locum Service) is staffed by experienced Canberra GPs. It is a not for profit organisation that has been operating since 1971. When you call you will speak with a nurse who will triage your medical problem. They may advise that it would be acceptable to wait and see your regular GP the following day.
 
@@ -270,9 +270,9 @@ Your privacy is important to us. Our full privacy policy (reviewed February 2026
 - **HealthLink EDI**: yourgpat
 
 ### Opening Hours
-- Lyneham: Monday to Thursday 8am to 6pm, Friday 8am to 12pm
-- Crace: Monday to Friday 8am to 6pm
-- Denman: Monday to Friday 8am to 6pm
+- Lyneham: Monday to Thursday 8am to 5:30pm, Friday 8am to 12pm
+- Crace: Monday to Friday 8am to 5:30pm
+- Denman: Monday to Friday 8am to 5:30pm
 - All clinics: Saturday hours vary with doctor availability (call or book online to confirm)
 
 ### After Hours
