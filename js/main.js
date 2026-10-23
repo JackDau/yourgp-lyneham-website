@@ -122,7 +122,11 @@ document.addEventListener('DOMContentLoaded', function() {
   // Services/FAQ accordion toggle
   document.querySelectorAll('.services-row').forEach(function(row) {
     row.querySelectorAll('p').forEach(function(p) { p.style.display = 'none'; });
-    row.addEventListener('click', function() {
+    row.addEventListener('click', function(e) {
+      // Only the question toggles the answer, so answer text can be selected, copied and its links clicked
+      if (e.target.closest('span')) return;
+      var sel = window.getSelection ? window.getSelection().toString() : '';
+      if (sel) return;
       this.querySelectorAll('p').forEach(function(p) {
         p.style.display = p.style.display === 'none' ? 'block' : 'none';
       });
