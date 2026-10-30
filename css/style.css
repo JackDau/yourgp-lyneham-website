@@ -3866,3 +3866,52 @@ footer p a:not([class]), footer li a:not([class]) {
 		margin: 2px 0 0 0;
 	}
 }
+
+/* Doctors page filter buttons */
+.doctor-filters {
+	margin: 0 0 1.5em;
+}
+.doctor-filters button {
+	font-family: inherit;
+	font-size: 15px;
+	margin: 0 6px 8px 0;
+	padding: 8px 14px;
+	border: 1px solid #5A867D;
+	border-radius: 20px;
+	background: #fff;
+	color: #456B63;
+	cursor: pointer;
+}
+.doctor-filters button:hover {
+	background: #EEF5F2;
+}
+.doctor-filters button[aria-pressed="true"] {
+	background: #5A867D;
+	color: #fff;
+}
+.doctor-filters button:focus-visible {
+	outline: 2px solid #0066cc;
+	outline-offset: 2px;
+}
+.doctor-filters-count,
+.doctor-filters-note {
+	margin: 4px 0 0;
+	font-size: 14px;
+	color: #555;
+}
+
+/* Doctor filter notes: high-contrast so patients notice them */
+.doctor-filters-note,
+.doctor-filters-count.is-empty {
+	margin-top: 10px;
+	padding: 10px 14px;
+	border-left: 5px solid #B3261E;
+	background: #FDECEA;
+	color: #8C1D18;
+	font-size: 15px;
+	font-weight: 600;
+	border-radius: 4px;
+}
+.doctor-filters-note strong {
+	color: #B3261E;
+}

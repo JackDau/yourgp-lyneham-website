@@ -40,7 +40,7 @@ src="https://www.facebook.com/tr?id=1811679615787920&ev=PageView&noscript=1"
 	
 <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
 
-<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" /><script type="text/javascript" src="../js/main.js" id="yourgpjs-js"></script>
+<link rel="stylesheet" href="../css/style.css?v=20261030c" type="text/css" media="screen" /><script type="text/javascript" src="../js/main.js?v=20261030c" id="yourgpjs-js"></script>
 
 <script type="text/javascript" id="google_gtagjs-js-after">
 window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
@@ -320,9 +320,21 @@ Afrikaans</p>
         </div>
         		        <div class="clearfix"></div>
 	</div>
+	<div class="doctor-filters" role="group" aria-label="Filter doctors by service">
+		<button type="button" data-filter="all" aria-pressed="true">All</button>
+		<button type="button" data-filter="new-patients" aria-pressed="false">New patients</button>
+		<button type="button" data-filter="skin" aria-pressed="false">Skin</button>
+		<button type="button" data-filter="travel" aria-pressed="false">Travel</button>
+		<button type="button" data-filter="yellow-fever" aria-pressed="false">Yellow fever</button>
+		<button type="button" data-filter="iud-insertion" aria-pressed="false">IUD insertion</button>
+		<button type="button" data-filter="iud-removal" aria-pressed="false">IUD removal</button>
+		<button type="button" data-filter="implanon" aria-pressed="false">Implanon</button>
+		<p class="doctor-filters-count" aria-live="polite"></p>
+		<p class="doctor-filters-note" role="note" hidden><strong>NOTE:</strong> Some doctors take new patients for specific services only. See Skin, or their profile.</p>
+	</div>
 	<div class="staff-grid">
 		<!--
-			--><div class="staff-member" data-type="9">
+			--><div class="staff-member" data-type="9" data-services="">
 <div class="top-content">
 <img class="desktop" alt="Dr Kristin McMahon" src="../images/doctors/kristin-mcmahon.jpg"/>
 <p>Dr Kristin McMahon</p>
@@ -340,7 +352,7 @@ Afrikaans</p>
 </div>
 </div>
 		<!--
-			--><div class="staff-member" data-type="10">
+			--><div class="staff-member" data-type="10" data-services="new-patients skin implanon">
 <div class="top-content">
 <img class="desktop" alt="Dr Hayden Henry" src="../images/doctors/hayden-henry.jpg"/>
 <p>Dr Hayden Henry</p>
@@ -357,7 +369,7 @@ Afrikaans</p>
 </div>
 </div>
 		<!--
-			--><div class="staff-member" data-type="1">
+			--><div class="staff-member" data-type="1" data-services="new-patients travel yellow-fever implanon">
 		        <div class="top-content">
 			        <img class="desktop" src="../images/doctors/mano-selvanathan.jpg"/>
 			        <p>Dr Mano Selvanathan</p>
@@ -402,7 +414,7 @@ Afrikaans</p>
 		     </div>
 		     END ARCHIVED -->
 		    <!--
-			--><div class="staff-member" data-type="3">
+			--><div class="staff-member" data-type="3" data-services="iud-removal implanon">
 		        <div class="top-content">
 			        <img class="desktop" src="../images/site/belinda.jpg"/>
 			        <p>Dr Belinda Glasson</p>
@@ -423,7 +435,7 @@ Afrikaans</p>
 		        </div>
 		     </div>
 		    <!--
-			--><div class="staff-member" data-type="4">
+			--><div class="staff-member" data-type="4" data-services="skin travel">
 		        <div class="top-content">
 			        <img class="desktop" src="../images/doctors/raymond-liu.jpg"/>
 			        <p>Dr Raymond Liu</p>
@@ -445,7 +457,7 @@ Afrikaans</p>
 		        </div>
 		     </div>
 		    <!--
-			--><div class="staff-member" data-type="5">
+			--><div class="staff-member" data-type="5" data-services="travel iud-removal implanon">
 		        <div class="top-content">
 			        <img class="desktop" src="../images/doctors/image-1.png"/>
 			        <p>Dr Riana JvR</p>
@@ -466,7 +478,7 @@ Afrikaans</p>
 		        </div>
 		     </div>
 		    <!--
-			--><div class="staff-member" data-type="6">
+			--><div class="staff-member" data-type="6" data-services="new-patients">
 		        <div class="top-content">
 			        <img class="desktop" src="../images/doctors/admin-ajax.jpg"/>
 			        <p>Dr Fred Chung</p>
@@ -488,7 +500,7 @@ Afrikaans</p>
 		        </div>
 		     </div>
 		    <!--
-			--><div class="staff-member" data-type="7">
+			--><div class="staff-member" data-type="7" data-services="">
 		        <div class="top-content">
 			        <img class="desktop" src="../images/doctors/john-deery.jpg"/>
 			        <p>Dr John Deery - Vasectomy</p>
@@ -512,7 +524,7 @@ Afrikaans</p>
 		        </div>
 		     </div>
 		    <!--
-			--><div class="staff-member" data-type="8">
+			--><div class="staff-member" data-type="8" data-services="travel">
 		        <div class="top-content">
 			        <img class="desktop" src="../images/doctors/freya.jpg"/>
 			        <p>Dr Freya Ashman</p>
