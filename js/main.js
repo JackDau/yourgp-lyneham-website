@@ -143,4 +143,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  // Open a dropdown when a link points to it (e.g. #vasectomy)
+  function openRowFromHash() {
+    var row = location.hash ? document.getElementById(location.hash.slice(1)) : null;
+    if (!row || !row.classList.contains('services-row')) return;
+    row.querySelectorAll('p').forEach(function(p) { p.style.display = 'block'; });
+    var arrow = row.querySelector('img');
+    if (arrow && !arrow.classList.contains('active')) {
+      arrow.style.transform = 'rotate(90deg)';
+      arrow.classList.add('active');
+    }
+    row.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  openRowFromHash();
+  window.addEventListener('hashchange', openRowFromHash);
+
 });
