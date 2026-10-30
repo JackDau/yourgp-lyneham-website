@@ -218,7 +218,7 @@ It is easy to book online. If you wish to call, please advise which practice you
 A proportion of appointments are reserved for urgent bookings each day. You can secure an 'on the day' appointment by booking online after midnight or by calling from 8am. If fully booked, we will try to find an appointment for you if your need is urgent. When fully booked, you can request a fit-in appointment. You can book on the fit-in list online.
 
 ### Billing
-Payment is required at the time of consultation. The GPs do not bulk bill. Consultation fees: Level B (<20min): $123 (Medicare rebate $45.05); Early morning (7am to 7:50am): $150 (Medicare rebate $58.65); Level C (<40min): $224 (Medicare rebate $87.10); Level D (<60min): $334 (Medicare rebate $128.35); Level E (>60min): $484 (Medicare rebate $207.90). Saturday fees: Level B: $154; Level C: $253; Level D: $384; Level E: $514. If a procedure or any other appointment is made, fees will be advised beforehand. All Workers' Compensation/Third Party cases are required to pay at the consultation time. Missed appointments will attract a $50 fee for a standard appointment. For long appointments, early morning appointments, and Saturday appointments, missed appointment fees are $100. Further appointments will not be able to be made until the missed appointment fee is paid in full.
+Payment is required at the time of consultation. The GPs do not bulk bill. Consultation fees: Level B (<20min): $123 (Medicare rebate $45.05); Early morning (7am to 7:50am): $150 (Medicare rebate $58.65); Level C (<40min): $224 (Medicare rebate $87.10); Level D (<60min): $334 (Medicare rebate $128.35); Level E (>60min): $484 (Medicare rebate $207.90). Saturday fees: Level B: $154; Level C: $253; Level D: $384; Level E: $514. If a procedure or any other appointment is made, fees will be advised beforehand. Workers' Compensation patients pay at the time of their appointment, unless a third party is present for a case conference. Missed appointments will attract a $50 fee for a standard appointment. For long appointments, early morning appointments, and Saturday appointments, missed appointment fees are $100. Further appointments will not be able to be made until the missed appointment fee is paid in full.
 
 ### Parking
 There is plentiful parking around the Lyneham shops. There is also parking opposite Lyneham Primary School on Brigalow St. Alternately drive past the practice and turn right at the roundabout onto Wattle Street — there is all day parking on the right side of the street.
@@ -246,6 +246,12 @@ E-mail to reception is not secure. Please take care in disclosing confidential i
 
 ### Reminders
 Your GP values preventative health care. You will be notified via SMS of reminders when due.
+
+### DVA (Veterans' Affairs)
+Our doctors (other than our skin doctors) will bulk bill DVA only if the patient is on the Coordinated Veterans' Care (CVC) program with them as their usual GP. If a patient is on the CVC program with a GP at another practice, our doctors will not bulk bill their appointment to DVA. Having a DVA Gold Card alone does not mean an appointment will be bulk billed; otherwise standard fees apply and are payable at the time of the appointment.
+
+### Workers' Compensation (billing)
+Workers' Compensation patients are expected to pay at the time of their appointment. The only exception is a case conference with a third party present (for example the employer, insurer or rehabilitation provider), which is billed to the insurer if there is an accepted claim number.
 
 ### After Hours Care
 Canberra After Hours Locum Medical Service (CALMS) provide excellent after hours care. Please call 1300 422 567. CALMS will send a summary via secure email of any visits that you have.
