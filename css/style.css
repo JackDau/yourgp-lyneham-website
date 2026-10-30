@@ -3845,3 +3845,15 @@ footer {
 	}
 }
 
+
+/* In-text links: blue and underlined so patients can see they are clickable.
+   Links with a class (buttons) and header/footer links keep their own styling. */
+p a:not([class]), li a:not([class]) {
+	color: #0066cc;
+	text-decoration: underline;
+}
+header p a:not([class]), header li a:not([class]),
+footer p a:not([class]), footer li a:not([class]) {
+	color: inherit;
+	text-decoration: inherit;
+}
