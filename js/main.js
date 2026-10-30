@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var buttons = filterBar.querySelectorAll('button[data-filter]');
     var cards = document.querySelectorAll('.staff-grid .staff-member');
     var countEl = filterBar.querySelector('.doctor-filters-count');
-    var noteEl = filterBar.querySelector('.doctor-filters-note');
+    var noteEls = filterBar.querySelectorAll('.doctor-filters-note');
     function applyFilter(name) {
       var valid = false;
       buttons.forEach(function(b) { if (b.getAttribute('data-filter') === name) valid = true; });
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ? 'None of our doctors at this clinic currently offer this. Please call (02) 6109 0000 to book at one of our other YourGP clinics.'
         : 'Showing ' + shown + ' doctor' + (shown === 1 ? '' : 's'));
       if (countEl) countEl.classList.toggle('is-empty', name !== 'all' && shown === 0);
-      if (noteEl) noteEl.hidden = name !== 'new-patients';
+      noteEls.forEach(function(n) { n.hidden = n.getAttribute('data-for') !== name; });
       if (window.history && history.replaceState) {
         var url = name === 'all' ? location.pathname : location.pathname + '?filter=' + name;
         history.replaceState(null, '', url);
