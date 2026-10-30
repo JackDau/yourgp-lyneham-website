@@ -3857,3 +3857,12 @@ footer p a:not([class]), footer li a:not([class]) {
 	color: inherit;
 	text-decoration: inherit;
 }
+
+/* Fee tables on phones: description first, price (and Medicare rebate) underneath, on every row */
+@media (max-width: 768px) {
+	.appointment-text span:nth-child(2) {
+		float: none !important;
+		display: block;
+		margin: 2px 0 0 0;
+	}
+}
