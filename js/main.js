@@ -158,4 +158,47 @@ document.addEventListener('DOMContentLoaded', function() {
   openRowFromHash();
   window.addEventListener('hashchange', openRowFromHash);
 
+  // Doctors page: filter cards by service (?filter=skin etc.)
+  var filterBar = document.querySelector('.doctor-filters');
+  if (filterBar) {
+    var buttons = filterBar.querySelectorAll('button[data-filter]');
+    var cards = document.querySelectorAll('.staff-grid .staff-member');
+    var countEl = filterBar.querySelector('.doctor-filters-count');
+    var noteEl = filterBar.querySelector('.doctor-filters-note');
+    function applyFilter(name) {
+      var valid = false;
+      buttons.forEach(function(b) { if (b.getAttribute('data-filter') === name) valid = true; });
+      if (!valid) name = 'all';
+      var shown = 0;
+      cards.forEach(function(card) {
+        var tags = (card.getAttribute('data-services') || '').split(' ');
+        var match = name === 'all' || tags.indexOf(name) !== -1;
+        card.style.display = match ? '' : 'none';
+        if (match) shown++;
+        if (!match) card.classList.remove('selector');
+      });
+      // Close any open doctor panel so it doesn't belong to a hidden card
+      if (name !== 'all' && staffInfo) {
+        staffInfo.style.display = 'none';
+        staffInfo.querySelectorAll('.staff-entire').forEach(function(el) { el.style.display = 'none'; });
+        cards.forEach(function(c) { c.classList.remove('selector'); });
+      }
+      buttons.forEach(function(b) { b.setAttribute('aria-pressed', b.getAttribute('data-filter') === name ? 'true' : 'false'); });
+      if (countEl) countEl.textContent = name === 'all' ? '' : (shown === 0
+        ? 'None of our doctors at this clinic currently offer this. Please call (02) 6109 0000 to book at one of our other YourGP clinics.'
+        : 'Showing ' + shown + ' doctor' + (shown === 1 ? '' : 's'));
+      if (countEl) countEl.classList.toggle('is-empty', name !== 'all' && shown === 0);
+      if (noteEl) noteEl.hidden = name !== 'new-patients';
+      if (window.history && history.replaceState) {
+        var url = name === 'all' ? location.pathname : location.pathname + '?filter=' + name;
+        history.replaceState(null, '', url);
+      }
+    }
+    buttons.forEach(function(b) {
+      b.addEventListener('click', function() { applyFilter(this.getAttribute('data-filter')); });
+    });
+    var params = new URLSearchParams(location.search);
+    if (params.get('filter')) applyFilter(params.get('filter'));
+  }
+
 });
