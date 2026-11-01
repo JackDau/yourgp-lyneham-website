@@ -3915,3 +3915,8 @@ footer p a:not([class]), footer li a:not([class]) {
 .doctor-filters-note strong {
 	color: #B3261E;
 }
+
+/* Doctors page: space under the heading before the filters (matches Denman) */
+.page-id-21 .page-heading {
+	margin-bottom: 0.5em;
+}
