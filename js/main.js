@@ -158,47 +158,66 @@ document.addEventListener('DOMContentLoaded', function() {
   openRowFromHash();
   window.addEventListener('hashchange', openRowFromHash);
 
-  // Doctors page: filter cards by service (?filter=skin etc.)
+  // Doctors page: filter cards by service (?filter=skin or ?filter=skin,new-patients)
+  // More than one filter can be on at once; a doctor must match all of them.
   var filterBar = document.querySelector('.doctor-filters');
   if (filterBar) {
     var buttons = filterBar.querySelectorAll('button[data-filter]');
     var cards = document.querySelectorAll('.staff-grid .staff-member');
     var countEl = filterBar.querySelector('.doctor-filters-count');
     var noteEls = filterBar.querySelectorAll('.doctor-filters-note');
-    function applyFilter(name) {
-      var valid = false;
-      buttons.forEach(function(b) { if (b.getAttribute('data-filter') === name) valid = true; });
-      if (!valid) name = 'all';
+    var selected = [];
+    function applyFilters(names) {
+      var valid = [];
+      buttons.forEach(function(b) {
+        var f = b.getAttribute('data-filter');
+        if (f !== 'all' && names.indexOf(f) !== -1) valid.push(f);
+      });
+      selected = valid;
       var shown = 0;
       cards.forEach(function(card) {
         var tags = (card.getAttribute('data-services') || '').split(' ');
-        var match = name === 'all' || tags.indexOf(name) !== -1;
+        var match = selected.every(function(f) { return tags.indexOf(f) !== -1; });
         card.style.display = match ? '' : 'none';
         if (match) shown++;
         if (!match) card.classList.remove('selector');
       });
       // Close any open doctor panel so it doesn't belong to a hidden card
-      if (name !== 'all' && staffInfo) {
+      if (selected.length && staffInfo) {
         staffInfo.style.display = 'none';
         staffInfo.querySelectorAll('.staff-entire').forEach(function(el) { el.style.display = 'none'; });
         cards.forEach(function(c) { c.classList.remove('selector'); });
       }
-      buttons.forEach(function(b) { b.setAttribute('aria-pressed', b.getAttribute('data-filter') === name ? 'true' : 'false'); });
-      if (countEl) countEl.textContent = name === 'all' ? '' : (shown === 0
-        ? 'None of our doctors at this clinic currently offer this. Please call (02) 6109 0000 to book at one of our other YourGP clinics.'
-        : 'Showing ' + shown + ' doctor' + (shown === 1 ? '' : 's'));
-      if (countEl) countEl.classList.toggle('is-empty', name !== 'all' && shown === 0);
-      noteEls.forEach(function(n) { n.hidden = n.getAttribute('data-for') !== name; });
+      buttons.forEach(function(b) {
+        var f = b.getAttribute('data-filter');
+        var on = f === 'all' ? selected.length === 0 : selected.indexOf(f) !== -1;
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      var empty = selected.length > 0 && shown === 0;
+      if (countEl) countEl.textContent = !selected.length ? '' : (!empty
+        ? 'Showing ' + shown + ' doctor' + (shown === 1 ? '' : 's')
+        : selected.length > 1
+          ? 'None of our doctors at this clinic match all of these. Try fewer filters, or call (02) 6109 0000 and we can help.'
+          : 'None of our doctors at this clinic currently offer this. Please call (02) 6109 0000 to book at one of our other YourGP clinics.');
+      if (countEl) countEl.classList.toggle('is-empty', empty);
+      noteEls.forEach(function(n) { n.hidden = selected.indexOf(n.getAttribute('data-for')) === -1; });
       if (window.history && history.replaceState) {
-        var url = name === 'all' ? location.pathname : location.pathname + '?filter=' + name;
+        var url = selected.length ? location.pathname + '?filter=' + selected.join(',') : location.pathname;
         history.replaceState(null, '', url);
       }
     }
     buttons.forEach(function(b) {
-      b.addEventListener('click', function() { applyFilter(this.getAttribute('data-filter')); });
+      b.addEventListener('click', function() {
+        var f = this.getAttribute('data-filter');
+        if (f === 'all') return applyFilters([]);
+        var next = selected.slice();
+        var i = next.indexOf(f);
+        if (i === -1) next.push(f); else next.splice(i, 1);
+        applyFilters(next);
+      });
     });
     var params = new URLSearchParams(location.search);
-    if (params.get('filter')) applyFilter(params.get('filter'));
+    if (params.get('filter')) applyFilters(params.get('filter').split(','));
   }
 
 });
