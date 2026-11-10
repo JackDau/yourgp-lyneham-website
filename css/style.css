@@ -3920,3 +3920,8 @@ footer p a:not([class]), footer li a:not([class]) {
 .page-id-21 .page-heading {
 	margin-bottom: 0.5em;
 }
+
+/* Doctors page: gap between an opened doctor profile and the filter buttons */
+.page #staff-info {
+	margin-bottom: 40px;
+}
